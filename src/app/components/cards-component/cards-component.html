@@ -1,46 +1,8 @@
 <section class="artigos-pastor">
-  <!-- CARD DE SERMÃO -->
-  <article class="sermao-card">
-    <iframe
-      width="100%"
-      height="500px"
-      src="https://www.youtube.com/embed/F5x_KwdeXm8?si"
-      frameborder="5"
-      allowfullscreen
-    ></iframe>
-    <p>Exposição Bíblica em Gênesis 31: 43-55 | Rev Aldenor Pacífico</p>
-  </article>
-
-  <article class="sermao-card">
-    <iframe
-      width="100%"
-      height="500px"
-      src="https://www.youtube.com/embed/LE9_QeIHA80?si"
-      frameborder="5"
-      allowfullscreen
-    ></iframe>
-    <p>Sermão Expositivo em Gênesis 32: 1-21 | Rev Aldenor Pacífico</p>
-  </article>
-
-  <article class="sermao-card">
-    <iframe
-      width="100%"
-      height="500px"
-      src="https://www.youtube.com/embed/QnsWmfAR-oc?si"
-      frameborder="5"
-      allowfullscreen
-    ></iframe>
-    <p>Sermão Expositivo em Gênesis 32: 22-32 | Rev Aldenor Pacífico</p>
-  </article>
-
-  <article class="sermao-card">
-    <iframe
-      width="100%"
-      height="500px"
-      src="https://www.youtube.com/embed/Xn4lK6enELc?si"
-      frameborder="5"
-      allowfullscreen
-    ></iframe>
-    <p>Sermão Expositivo em Gênesis 33: 1-17 | Rev Aldenor Pacífico</p>
+  <article class="sermao-card" *ngFor="let item of cards; let i = index">
+    <iframe [src]="getSafeLink(item.link)" frameborder="0" allowfullscreen></iframe>
+    <div class="content">
+      <p>{{ item.content }}</p>
+    </div>
   </article>
 </section>

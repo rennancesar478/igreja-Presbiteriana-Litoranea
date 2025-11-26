@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Header } from "../../components/header/header";
-import { NavComponent } from "../../components/nav-component/nav-component";
+import { FooterComponent } from "../../components/footer-component/footer-component";
 
 @Component({
   selector: 'app-boletins',
-  imports: [Header, NavComponent],
+  imports: [Header, FooterComponent],
   templateUrl: './boletins.html',
   styleUrl: './boletins.css',
 })

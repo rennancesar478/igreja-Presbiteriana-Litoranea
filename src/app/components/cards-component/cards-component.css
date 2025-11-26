@@ -1,17 +1,52 @@
 .artigos-pastor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding-top: 40px;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-/* ============================================
-   COMPONENTE: Card de Sermão (texto abaixo do vídeo)
-   ============================================ */
-.artigos-pastor p {
-  color: #333;
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
+.sermao-card:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.sermao-card iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-bottom: 4px solid #0b5c4a;
+}
+
+.sermao-card .content {
+  padding: 16px 20px;
+}
+
+.sermao-card .content p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343434;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  cursor: default;
+}
+
+.sermao-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

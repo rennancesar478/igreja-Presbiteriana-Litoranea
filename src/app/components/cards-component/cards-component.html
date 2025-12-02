@@ -1,0 +1,8 @@
+<section class="artigos-pastor">
+  <article class="sermao-card" *ngFor="let item of cards; let i = index">
+    <iframe [src]="getSafeLink(item.link)" frameborder="0" allowfullscreen></iframe>
+    <div class="content">
+      <p>{{ item.content }}</p>
+    </div>
+  </article>
+</section>

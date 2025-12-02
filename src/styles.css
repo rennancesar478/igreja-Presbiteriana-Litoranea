@@ -1,0 +1,13 @@
+/* * Este bloco de código remove margens e preenchimentos padrão 
+ * que causam o espaço branco nas bordas da tela.
+ */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+

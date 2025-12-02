@@ -51,11 +51,11 @@
 }
 
 .sidebar .logo {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .sidebar #logo-img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;

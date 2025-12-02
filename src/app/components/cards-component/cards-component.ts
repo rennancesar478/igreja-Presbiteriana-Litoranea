@@ -16,20 +16,20 @@ interface Cards {
 export class CardsComponent {
     cards: Cards[] = [
     {
-      link: 'https://www.youtube.com/embed/k2Ax7oceOQk?si',
-      content: 'Exposição Bíblica Gênesis 29:1-8 - Rev Aldenor Pacifico'
+      link: 'https://www.youtube.com/embed/F5x_KwdeXm8?si=',
+      content: 'Exposição Bíblica em Gênesis 31: 15 – Rev Aldenor Pacífico'
     },
     {
-      link: 'https://www.youtube.com/embed/V--tCcdjujI?si',
-      content: 'Exposição Bíblica em Gênesis 29:9-30 - Rev Aldenor Pacifico'
+      link: 'https://www.youtube.com/embed/LE9_QeIHA80?si=',
+      content: 'Sermão Expositivo em Gênesis 31: 1-21 – Rev Aldenor Pacífico'
     },
     {
-      link: 'https://www.youtube.com/embed/VlqCTAPbBiE?si',
-      content: 'Exposição Bíblica em Gênesis 29: 31-35 - Rev Aldenor Pacifico'
+      link: 'https://www.youtube.com/embed/OnsfWnFAR-oc?si=',
+      content: 'Sermão Expositivo em Gênesis 32: 22-32 – Rev Aldenor Pacífico'
     },
     {
-      link: 'https://www.youtube.com/embed/1_fcK6m8dcE?si',
-      content: 'Exposição Bíblica em Gênesis 30:1-24 - Rev Aldenor Pacífico'
+      link: 'https://www.youtube.com/embed/Xn4l6KeenELc?si=',
+      content: 'Sermão Expositivo em Gênesis 33: 1-17 – Rev Aldenor Pacífico'
     }
   ];
 

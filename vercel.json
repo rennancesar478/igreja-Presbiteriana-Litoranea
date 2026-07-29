@@ -1,7 +1,6 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/igreja-presbiteriana",
+  "framework": "angular",
+  "outputDirectory": "dist/igreja-presbiteriana/browser",
   "rewrites": [
     {
       "source": "/(.*)",

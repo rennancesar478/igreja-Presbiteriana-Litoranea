@@ -1,9 +1,9 @@
 .page-container {
-  padding: 40px;
+  padding: 40px 24px;
   max-width: 850px;
-  margin-left: 330px;
+  margin: 0 auto;
   font-family: "Segoe UI", Arial, sans-serif;
-  color: #0a1c14; 
+  color: #0a1c14;
 }
 
 .page-title {

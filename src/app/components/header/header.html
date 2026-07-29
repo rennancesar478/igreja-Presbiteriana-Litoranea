@@ -1,31 +1,40 @@
-<main class="main-content">
-  <aside class="sidebar">
-    <a href="/">
+<header class="top-header">
+  <div class="header-left" *ngIf="isHomePage">
+    <a routerLink="/" class="brand-link">
       <img src="/assets/Design sem nome.png" alt="Logo Igreja Presbiteriana Litorânea" id="logo-img" />
     </a>
-    <header class="header-top">
-      <nav id="links">
-        <a href="/">HOME</a>
-        <a href="liturgias">LITURGIAS</a>
-        <a href="hinos">HINOS</a>
-        <a href="boletins">BOLETINS</a>
-      </nav>
+  </div>
 
-      <nav id="social-medias">
-        <a href="/sobre" id="sobre">Sobre</a>
-        <a href="https://w.app/mpsdie"><i class="fa-brands fa-whatsapp"></i></a>
-        <a
-          href="https://www.instagram.com/ip_litoranea?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/netoaldenor.pacifico?locale=pt_BR"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://open.spotify.com/show/4AtYvCTb0GZOOBmYUode2q?si=042c9fd67618419f"
-          ><i class="fa-brands fa-spotify"></i
-        ></a>
-        <a href="https://www.youtube.com/@ip_litoranea"><i class="fa-brands fa-youtube"></i></a>
-      </nav>
-    </header>
-  </aside>
-</main>
+  <button
+    class="menu-button"
+    [class.active]="isMenuOpen"
+    aria-label="Abrir menu"
+    type="button"
+    (click)="toggleMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<aside class="sidebar" [class.collapsed]="!isMenuOpen">
+  <div class="sidebar-top">
+    <nav class="nav-links" aria-label="Navegação principal" [class.hidden]="!isMenuOpen">
+      <a routerLink="/">Página inicial</a>
+      <a href="hinos">Hinos</a>
+      <a href="boletins">Boletins</a>
+      <a href="biblia">Bíblia</a>
+      <a href="/sobre" id="sobre">Sobre</a>
+    </nav>
+  </div>
+
+  <div class="sidebar-bottom">
+    <div class="social-links" aria-label="Redes sociais">
+      <a href="https://w.app/mpsdie" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/ip_litoranea?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://open.spotify.com/show/4AtYvCTb0GZOOBmYUode2q?si=042c9fd67618419f" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://www.youtube.com/@ip_litoranea" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</aside>

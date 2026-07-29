@@ -1,0 +1,25 @@
+.artigos-page {
+  padding: 32px 28px 40px;
+  background: linear-gradient(135deg, #f8f2e8 0%, #f1e8dc 100%);
+}
+
+.artigos-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.artigos-card h1 {
+  margin-top: 0;
+  color: #0b5c4a;
+}
+
+.artigo-texto {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #4b5563;
+  font-size: 1rem;
+}

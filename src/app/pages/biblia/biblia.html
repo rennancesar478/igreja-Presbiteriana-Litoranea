@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<section class="biblia-page">
+  <div class="biblia-container">
+    <h1>Bíblia ACF</h1>
+    <p class="subtitle">.</p>
+
+    <div class="controls">
+      <label>
+        Livro
+        <select [(ngModel)]="selectedBook" (change)="selectBook(selectedBook)">
+          <option *ngFor="let book of books" [value]="book">{{ book }}</option>
+        </select>
+      </label>
+
+      <label>
+        Capítulo
+        <select [(ngModel)]="selectedChapter" (change)="selectChapter(selectedChapter)">
+          <option *ngFor="let chapter of [].constructor(chapters[selectedBook] || 1); let i = index" [value]="i + 1">
+            {{ i + 1 }}
+          </option>
+        </select>
+      </label>
+
+      <label>
+        Versículo
+        <select [(ngModel)]="selectedVerse" (change)="selectVerse(selectedVerse)">
+          <option *ngFor="let verse of [].constructor(verses[selectedBook] || 1); let i = index" [value]="i + 1">
+            {{ i + 1 }}
+          </option>
+        </select>
+      </label>
+    </div>
+
+    <div class="passage-card">
+      <h2>{{ chapterReference }}</h2>
+      <p *ngIf="isLoading">Carregando texto bíblico...</p>
+      <div *ngIf="!isLoading" class="chapter-content">
+        <div *ngFor="let item of chapterText" class="verse-item">
+          <strong>{{ item.verse }}</strong>
+          <span>{{ item.text }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer-component></app-footer-component>

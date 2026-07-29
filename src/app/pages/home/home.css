@@ -47,7 +47,8 @@
 
 .articles-panel,
 .video-panel,
-.bulletin-panel {
+.bulletin-panel,
+.articles-panel-home {
   background: #fff;
   border-radius: 20px;
   padding: 24px;
@@ -56,7 +57,8 @@
 
 .articles-panel h2,
 .video-panel h2,
-.bulletin-panel h2 {
+.bulletin-panel h2,
+.articles-panel-home h2 {
   margin-top: 0;
   color: #0b5c4a;
   font-size: 1.2rem;
@@ -99,6 +101,31 @@
   border: none;
   border-radius: 14px;
   background: #000;
+}
+
+.articles-panel-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #f8f5ef 0%, #f1e8dc 100%);
+}
+
+.articles-panel-home p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.access-articles-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #0b5c4a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .article-reader {

@@ -1,32 +1,68 @@
 <app-header></app-header>
+
 <div class="home-page">
+
+  <!-- HERO -->
   <section class="hero-section">
     <div class="hero-content">
-      <p class="hero-tag"></p>
-      <h1>Seja bem-vindo à página principal da Igreja Presbiteriana Litorânea</h1>
-      <p class="hero-text">
-        Aqui você encontra conteúdos especiais, artigos dos pastores e vídeos para edificação da fé.
+
+      <p class="hero-tag">
+        Igreja Presbiteriana Litorânea
       </p>
+
+      <h1>
+        Seja bem-vindo à página principal da Igreja Presbiteriana Litorânea
+      </h1>
+
+      <p class="hero-text">
+        Aqui você encontra conteúdos especiais, vídeos para edificação da fé
+        e o boletim do Dia do Senhor.
+      </p>
+
     </div>
   </section>
 
+  <!-- CONTEÚDO -->
   <section class="content-grid">
+
+    <!-- VÍDEO -->
     <div class="video-panel">
-      <h2>Vídeo destaque</h2>
+
+      <h2>Vídeo em destaque</h2>
+
       <iframe
-        src="https://www.youtube.com/embed/F5x_KwdeXm8?si="
+        src="https://www.youtube.com/embed/F5x_KwdeXm8"
         title="Vídeo destaque"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
+
     </div>
 
-  <section class="bulletin-panel">
-    <h2>Acessar boletim do dia do Senhor</h2>
-    <p>Confira o boletim do dia 02/08/2026.</p>
-    <a href="https://drive.google.com/drive/folders/1sMSGhD4sXZL4CBZqRyqAgMbda4w9beTQ" target="_blank" rel="noopener noreferrer">Acessar boletim no Drive</a>
+    <!-- BOLETIM -->
+    <section class="bulletin-panel">
+
+      <h2>Boletim do Dia do Senhor</h2>
+
+      <p>
+        Confira o boletim mais recente da Igreja Presbiteriana Litorânea.
+      </p>
+
+      <a
+        href="https://drive.google.com/drive/folders/1sMSGhD4sXZL4CBZqRyqAgMbda4w9beTQ"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        Acessar boletim
+
+      </a>
+
+    </section>
+
   </section>
 
   <app-cards-component></app-cards-component>
-<app-footer-component></app-footer-component>
 
+</div>
+
+<app-footer-component></app-footer-component>
